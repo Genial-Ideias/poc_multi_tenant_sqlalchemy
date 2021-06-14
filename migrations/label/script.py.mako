@@ -1,4 +1,7 @@
-"""${message}
+<%!
+import re
+
+%>"""${message}
 
 Revision ID: ${up_revision}
 Revises: ${down_revision | comma,n}
@@ -16,9 +19,9 @@ branch_labels = ${repr(branch_labels)}
 depends_on = ${repr(depends_on)}
 
 
-def upgrade():
+def upgrade(engine_name):
     ${upgrades if upgrades else "pass"}
 
 
-def downgrade():
+def downgrade(engine_name):
     ${downgrades if downgrades else "pass"}

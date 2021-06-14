@@ -25,6 +25,7 @@ def create(
         domain=domain
     )
     create_tenant_service.create(create_tenant_model)
+
     typer.echo('Tenant criado com sucesso!')
 
 

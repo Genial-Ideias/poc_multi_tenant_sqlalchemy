@@ -10,7 +10,9 @@ def get_tenant_connections() -> dict:
     tenants = list_tenant_service.list_tenants()
     binds = {}
     for tenant in tenants:
-        conntection_string_uri = f'///./core_{tenant.code}.db'
+        conntection_string_uri = {
+            'url': f'sqlite:///./core_{tenant.code}.db'
+        }
         tenant_code = tenant.code
         binds[tenant_code] = conntection_string_uri
     return binds
