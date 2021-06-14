@@ -1,0 +1,14 @@
+alembic==1.6.5
+click==7.1.2
+dependency-injector==4.33.0
+greenlet==1.1.0
+Mako==1.1.4
+MarkupSafe==2.0.1
+pydantic==1.8.2
+python-dateutil==2.8.1
+python-dotenv==0.17.1
+python-editor==1.0.4
+six==1.15.0
+SQLAlchemy==1.4.18
+typer==0.3.2
+typing-extensions==3.10.0.0
